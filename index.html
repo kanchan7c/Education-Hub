@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/73111b1bba.js" crossorigin="anonymous"></script>
+    <title>Education Hub</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/Images/logo.png" alt="Education Hub"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times-circle" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="http://">HOME</a></li>
+                    <li><a href="http://">ABOUT</a></li>
+                    <li><a href="http://">COURSES</a></li>
+                    <li><a href="http://">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Online classes on weekends</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Dolore dicta repellendus alias, nulla necessitatibus eaque unde ea quia iure! Ab!</p>
+            <a href="http://" class="explore-btn">Click to Explore</a>
+        </div>
+    </section>
+    <!-- Javascript codes below -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function openMenu(){
+        navLinks.style.right= "0px";
+    }
+    function closeMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+
+</html>
